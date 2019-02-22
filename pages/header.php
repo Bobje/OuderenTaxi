@@ -1,5 +1,5 @@
 <?php
-	$base_url = "localhost";
+	$base_url = "https://taxi1.azurewebsites.net";
 	$loggedin = true;
 	
 	function Redirect($url, $permanent = false)
