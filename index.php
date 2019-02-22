@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+include 'pages/header.php';
 
 ?>
 
@@ -20,4 +20,4 @@ include 'header.php';
 	</div>
 </section>
 
-<?php include 'footer.php';?>
+<?php include 'pages/footer.php';?>

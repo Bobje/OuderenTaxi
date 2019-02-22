@@ -61,11 +61,11 @@
 	<nav class="navbar navbar-expand-sm sticky-top">
 		<div class="container">	
 			<a class="navbar-brand" href="index.php">
-				 <img class="taxi_logo" src="taxi_logo.png" alt="Taxi button" > 
+				 <img class="taxi_logo" src="images/taxi_logo.png" alt="Taxi button" > 
 			</a>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="options.php">
+					<a class="nav-link" href="pages/options.php">
 						<span class="glyphicon glyphicon-cog logo-big"></span>
 					</a>
 				</li>
