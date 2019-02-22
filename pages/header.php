@@ -50,7 +50,7 @@
 <script src="http://<?php echo $base_url;?>/jquery.js"></script> 
 
 <!-- Own stylesheet -->
-<link rel="stylesheet" href="<?php echo $base_url;?>/style.css">
+<link rel="stylesheet" href="https://<?php echo $base_url;?>/style.css">
 
 <title>Taxi button for elderly</title>
 </head>
