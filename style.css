@@ -1,0 +1,70 @@
+/*----- Specific Style sheet for DSCS project -----*/
+/*----- 		Made By: Joke van Ede 		 -----*/
+
+nav{
+	background-color:#0277BD;
+}
+.taxi_logo{
+	max-width:100px;
+	max-height:100px;
+}
+.col-sm-8{
+	background-color:#B3E5FC;
+	border-radius: 5px;
+	padding: 5px;
+	padding-left:15px;
+	margin:3px;
+}
+.logo-big{
+	font-size:36px;
+}
+label{
+	min-width:50px;
+}
+input{
+	margin-left: 10px;
+	clear:right;
+}
+.row{
+	background-attachment: #E1F5FE;
+}
+.taxi_button{
+	min-width: 250px;
+	min-height:50px;
+	margin: 10px;
+	font-size:22px;
+	color:black;
+	border-radius:6px;
+	background-color:#00000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.taxi_button:hover{
+	background-color:#757575;
+}
+.iets{
+	width: 50%;
+	margin: 0 auto;
+}
+.option_Header{
+	border-bottom:1px solid grey;
+}
+.option_Header h2{
+	width:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
