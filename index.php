@@ -1,13 +1,9 @@
-<?php 
-include 'pages/header.php';
-
-?>
+<?php include ("pages/header.php"); ?>
 
 <section>
 	<div class="container">
 		<div class="row justify-content-md-center">
-			
-			<div class="col-sm-8"> 
+			<div class="col-sm-8">
 				<div class="iets">
 					<button class="taxi_button">Uber</button>
 					<button class="taxi_button">Regio Taxi</button>
@@ -20,4 +16,4 @@ include 'pages/header.php';
 	</div>
 </section>
 
-<?php include 'pages/footer.php';?>
+<?php include ("pages/footer.php");?>

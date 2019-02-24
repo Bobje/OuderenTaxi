@@ -23,4 +23,4 @@ $_SESSION['email_address'] = $_POST['email_address'];
 	</div>
 </section>
 
-<?php include 'footer.php';?>
+<?php include("footer.php"); ?>

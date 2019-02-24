@@ -1,7 +1,4 @@
-<?php 
-include 'header.php';
-
-?>
+<?php include("header.php"); ?>
 
 <section>
 	<div class="container">
@@ -15,4 +12,4 @@ include 'header.php';
 	</div>
 </section>
 
-<?php include 'footer.php';?>
+<?php include("footer.php"); ?>

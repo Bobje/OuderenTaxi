@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+include("header.php"); ?>
 
 ?>
 
@@ -17,4 +17,4 @@ include 'header.php';
 	</div>
 </section>
 
-<?php include 'footer.php';?>
+<?php include("footer.php"); ?>
