@@ -1,5 +1,5 @@
 <?php
-	$base_url = "taxi1.azurewebsites.net";
+	$base_url =  "taxi1.azurewebsites.net";//"localhost"; //
 	$loggedin = true;
 	
 	function Redirect($url, $permanent = false)
@@ -47,7 +47,7 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 <!-- Own JavaScript -->
-<script src="http://<?php echo $base_url;?>/jquery.js"></script> 
+<!--<script src="http://<?php echo $base_url;?>/jquery.js"></script> 
 
 <!-- Own stylesheet -->
 <link rel="stylesheet" href="https://<?php echo $base_url;?>/style.css">
