@@ -1,18 +1,18 @@
 <?php
-	$base_url =  "taxi1.azurewebsites.net";//"localhost"; //
+    include("Config/dbConnection.php");
+	#$base_url =  "taxi1.azurewebsites.net";
+    $base_url = "localhost";
 	$loggedin = true;
 	
-	function Redirect($url, $permanent = false)
-	{
-		if (headers_sent() === false)
-		{
+	function Redirect($url, $permanent = false) {
+		if (headers_sent() === false) {
 			header('Location: ' . $base_url.'/login');
 		}
 		exit();
 	}
 	if($loggedin == True){
 		
-	}else{
+	} else {
 		echo "<script type='text/javascript'>alert('error');</script>";
 		Redirect('http://www.google.com/', false);
 	}
@@ -22,8 +22,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!--[if lt IE 9]-->
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -39,7 +38,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <!-- JavaScript and jQuery for the graphs -->
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
@@ -49,8 +48,8 @@
 <!-- Own JavaScript -->
 <!--<script src="http://<?php echo $base_url;?>/jquery.js"></script> 
 
-<!-- Own stylesheet -->
-<link rel="stylesheet" href="https://<?php echo $base_url;?>/style.css">
+<!- Own stylesheet -->
+<link rel="stylesheet" href="http://<?php echo $base_url;?>/Ouderentaxi/style.css">
 
 <title>Taxi button for elderly</title>
 </head>
