@@ -12,7 +12,7 @@ include 'header.php';
 				<form method="post" action="Taxi_uber.php">
 					<label>Mevr. / Dhr.</label><br>
 					<label>Name</label> <input type="text" name="name">
-					<label>Adress</label> <input type="text" name="address">
+					<label>Address</label> <input type="text" name="address">
 					<input type="submit" value="Go To Step 2">
 				</form>
 			</div>
