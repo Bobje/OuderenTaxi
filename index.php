@@ -45,27 +45,3 @@ include 'pages/header.php';
 </section>
 
 <?php include 'pages/footer.php';?>
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  
- 
-    // initialize input widgets first
-    $('#datepairExample .time').timepicker({
-        'showDuration': true,
-        'timeFormat': 'g:ia'
-    });
-
-    $('#datepairExample .date').datepicker({
-        'format': 'yyyy-m-d',
-        'autoclose': true
-    });
-
-    // initialize datepair
-    $('#datepairExample').datepair();
-	
-	// Time Picker Initialization
-	$('#input_starttime').pickatime({});
-		
-  </script>
