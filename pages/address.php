@@ -7,11 +7,8 @@ if ($_POST['start_location'] =="Now"){
 	$_SESSION['datepicker'] = date("Y/m/d");
 }else{
 	$_SESSION['input_starttime'] = $_POST['input_starttime'];
-	$_SESSION['datepicker'] = $_POST['datepicker'];
+	$_SESSION['input_date'] = $_POST['input_date'];
 }
-
-
-
 ?>
 
 <section>

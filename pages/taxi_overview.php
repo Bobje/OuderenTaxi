@@ -1,7 +1,12 @@
 <?php 
 include 'header.php';
-
+include '../api.php';
 //now, let's register our session variables
+if ($_SESSION['start_location'] == "Home"){
+	$_SESSION['ID'] = '03';
+	$homeAddress = GetHomeAddress($_SESSION['ID']);
+	$_SESSION['start_location'] = $homeAddress;
+}
  
 $_SESSION['taxi'] = $_POST['taxi'];
 

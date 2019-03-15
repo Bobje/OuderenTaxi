@@ -1,27 +1,33 @@
+
 <?php 
 include 'header.php';
+
+//now, let's register our session variables
+
+$_SESSION['start_location'] = $_POST['start_location'];
+$_SESSION['destination'] = $_POST['destination'];
+
 ?>
 
 <section>
 	<div class="container">
 		<div class="row justify-content-md-center">
+			
 			<div class="col-sm-8"> 
 				<form action="/action_page.php">
 				  <div class="container">
-					<h1>Register - Page 2</h1>
+					<h1>Register</h1>
 					<p>Please fill in this form to create an account.</p>
 					<hr>
-					<label for="email"><b>First Name</b></label>
-					<input type="text" placeholder="Enter Name" name="name" required>
-					
-					<label for="email"><b>Last Name</b></label>
+
+					<label for="email"><b>Email</b></label>
 					<input type="text" placeholder="Enter Email" name="email" required>
 
-					<label for="psw"><b>Phonenumber</b></label>
-					<input type="password" placeholder="Enter Pincode" name="psw" required>
-					
-					<label for="psw-repeat"><b>Address</b></label>
-					<input type="text" placeholder="Repeat Pincode" name="psw-repeat" required>
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+
+					<label for="psw-repeat"><b>Repeat Password</b></label>
+					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 					<hr>
 					<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
@@ -29,12 +35,17 @@ include 'header.php';
 				  </div>
 				  
 				  <div class="container signin">
-					<p>Already have an account? <a href="login.php">Sign in</a>.</p>
+					<p>Already have an account? <a href="#">Sign in</a>.</p>
 				  </div>
 				</form>
 			</div>
+	
 		</div>
 	</div>
 </section>
+
+
+
+
 
 <?php include 'footer.php';?>

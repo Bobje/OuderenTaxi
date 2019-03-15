@@ -2,7 +2,7 @@
 	//let's start the session
 	session_start();
 	
-	$base_url = "https://taxi1.azurewebsites.net";//"localhost";//
+	$base_url = "localhost";//"https://taxi1.azurewebsites.net";
 	$loggedin = true;
 	
 	function Redirect($url, $permanent = false)
@@ -51,14 +51,8 @@
 <!-- JavaScript and jQuery for the graphs -->
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-
-
-  
- 
-  
-
 <!-- Own stylesheet -->
-<link rel="stylesheet" href="https://<?php echo $base_url;?>/style.css">
+<link rel="stylesheet" href="http://<?php echo $base_url;?>/style.css">
 
 <title>Taxi button for elderly</title>
 </head>
@@ -68,12 +62,12 @@
 <header>
 	<nav class="navbar navbar-expand-sm sticky-top">
 		<div class="container">	
-			<a class="navbar-brand" href="../index.php">
-				 <img class="taxi_logo" src="images/taxi_logo.png" alt="Taxi button" > 
+			<a class="navbar-brand" href="/index.php">
+				 <img class="taxi_logo" src="/images/taxi_logo.png" alt="Taxi button" > 
 			</a>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="pages/options.php">
+					<a class="nav-link" href="/pages/options.php">
 						<span class="glyphicon glyphicon-cog logo-big"></span>
 					</a>
 				</li>
