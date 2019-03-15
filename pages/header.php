@@ -4,8 +4,8 @@
 	session_start();
 	
 	include("Config/dbConnection.php");
-	$base_url =  "taxi1.azurewebsites.net";
-    #$base_url = "localhost";
+	#$base_url =  "taxi1.azurewebsites.net";
+    $base_url = "localhost";
 
 	$loggedin = true;
 	
