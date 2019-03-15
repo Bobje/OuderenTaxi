@@ -1,9 +1,15 @@
 <?php 
 
+
+//let's start the session
+session_start();
+
+
 include 'header.php';
 //now, let's register our session variables
 
-
+$_SESSION['name'] = $_POST['name'];
+$_SESSION['email_address'] = $_POST['email_address'];
 
 ?>
 
@@ -17,4 +23,4 @@ include 'header.php';
 	</div>
 </section>
 
-<?php include 'footer.php';?>
+<?php include("footer.php"); ?>

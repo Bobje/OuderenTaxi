@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+include("header.php"); ?>
 
 ?>
 
@@ -7,20 +7,14 @@ include 'header.php';
 	<div class="container">
 		<div class="row justify-content-md-center">
 			<div class="col-sm-8"> 
-				<form method="post" action="setup_p1.php">
-					<div class="container">
-						<p>
-							Instructions
-						
-						</p>
-						<div class="button_row">
-							<button type="submit" class="registerbtn">Next</a>
-						</div>
-					</div>
-				</form>
+				<p>
+					Instructions
+				
+				</p>
+				<a class="button next" href="personal_info">Next</a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<?php include 'footer.php';?>
+<?php include("footer.php"); ?>
