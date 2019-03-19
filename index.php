@@ -15,22 +15,17 @@
 
 					<div class="col-sm-6 right">
 						<div class="button_row">
-							<input type="radio" name="start_location" id="start_location_other" value="">							 
+							<input type="radio" name="start_location" id="start_location_other" value="Other">							 
 							<label for="start_location_other">Plan a Taxi</label> 
 						</div>
 						<div class="button_row">
 							<label class="form_label">Date</label> 						
-							<input type="text" id="datepicker" name="input_date">
+							<input type="text" id="date" name="input_date">							
 							
-						
 							<label for="input_starttime">Pickup time</label>
 							<input type="time" id="input_starttime" name="input_starttime">
-								
-							
 						</div>
-
 					</div>
-
 					<div class="button_row">
 						<button type="submit" class="registerbtn">Next step</button>
 					</div>
@@ -43,3 +38,5 @@
 </section>
 
 <?php include ("pages/footer.php");?>
+
+   

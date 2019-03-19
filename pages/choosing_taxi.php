@@ -29,7 +29,7 @@ $_SESSION['destination'] = $_POST['destination'];
 						<label for="start_location_home">Taxi Direct Amsterdam</label>
 					</div>
 					<div class="button_row">
-						<input type="submit" value="Overview">
+						<input type="submit" class="registerbtn" value="Overview">
 					</div>
 				</form>
 			</div>
