@@ -33,9 +33,43 @@ nav{
 }
 
 
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
 
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
 
 
 
@@ -88,7 +122,7 @@ input{
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
+  /*width: 100%;*/
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -133,11 +167,60 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
+/*------------- Options --------------*/
+.taxi_button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  float:right;
+  text-align:center;
+}
 
+.option_header{
+	
+	border-bottom: 1px solid black;
+	padding: 5px;
+}
+.option_header h2{
+	max-width: 200px;
+}
+.option_line{
+	clear:right;
+}
+.option_line label{
+	padding-right: 10px;
+	margin-right:10px;
+	min-width:125px;
+}
+.option_line label input[type=text]{
+	margin-left:10px;
+}
+.option_button{
+	min-width: 150px;
+}
+
+/*------------*/
+.input_text {
+	width: 70%;
+}
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
 
 /*------------- Footer ----------*/
 
-
+footer{
+	background-color:#0277BD;
+	color:white;
+	text-align:center;
+}
 
 
 

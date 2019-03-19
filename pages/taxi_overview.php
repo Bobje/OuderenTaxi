@@ -4,8 +4,8 @@ include '../api.php';
 //now, let's register our session variables
 if ($_SESSION['start_location'] == "Home"){
 	$_SESSION['ID'] = '03';
-	$homeAddress = GetHomeAddress($_SESSION['ID']);
-	$_SESSION['start_location'] = $homeAddress;
+	
+	$_SESSION['start_location'] = "Roeterseiland, Amsterdam";
 }
  
 $_SESSION['taxi'] = $_POST['taxi'];
@@ -17,12 +17,25 @@ $_SESSION['taxi'] = $_POST['taxi'];
 		<div class="row justify-content-md-center">
 			
 			<div class="col-sm-8"> 
-				<?php
-		
-					echo "<h3> PHP List All Session Variables</h3>";
-					foreach ($_SESSION as $key=>$val)
-					echo $key." : ".$val."<br/>";
-				?>
+				<form method="post" action="order.php">
+					<h2>Your Taxi order</h2>
+					<div class="option_line">
+						<label><b>When:</b> <?php if($_SESSION['Depart_time']=="Now"){echo "Now";}else{ echo $_SESSION['input_date '] ." - ". $_SESSION['input_starttime ']; } ?></label>
+					</div>
+					<div class="option_line">
+						<label><b>From:</b> <?php echo $_SESSION['start_location']; ?></label>
+					</div>
+					<div class="option_line">
+						<label><b>To: </b><?php echo $_SESSION['destination']; ?></label>
+					</div>
+					<div class="option_line">
+						<label><b>Taxi:</b> <?php echo $_SESSION['taxi']; ?></label>
+					</div>
+					
+					<div class="option_line">
+						<button type="submit" class="registerbtn">Order Taxi</button>
+					</div>
+				</form>
 
 
 			</div>

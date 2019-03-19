@@ -2,9 +2,8 @@
 include 'header.php';
 
 //now, let's register our session variables
-if ($_POST['start_location'] =="Now"){
-	$_SESSION['input_starttime'] = date("h:i:sa");
-	$_SESSION['datepicker'] = date("Y/m/d");
+if ($_POST['Depart_time'] =="Now"){
+	$_SESSION['Depart_time'] = $_POST['Depart_time'];
 }else{
 	$_SESSION['input_starttime'] = $_POST['input_starttime'];
 	$_SESSION['input_date'] = $_POST['input_date'];
@@ -17,7 +16,7 @@ if ($_POST['start_location'] =="Now"){
 			
 			<div class="col-sm-8"> 
 				<form method="post" action="choosing_taxi.php">
-					<div class="button_row">
+					<div class="option_line">
 						<label class="form_label">Starting point</label> 
 						
 						<input type="radio" name="start_location" id="start_location_home" value="Home" checked> 
@@ -26,20 +25,19 @@ if ($_POST['start_location'] =="Now"){
 						<input type="radio" name="start_location" id="start_location_other" value="">
 						<label for="start_location_other">Other</label> 
 						<input type="text" name="other_reason" />
-						<button onclick=""> 
+						 
 							<span class="glyphicon glyphicon-book"></span>
-						</button>
+						
 
 					</div>
-					<div class="button_row">
+					<div class="option_line">
 						<label class="form_label">Destination</label> 
-						<input type="text" name="destination" required>
-						
-							<span class="glyphicon glyphicon-book"></span>
+						<input type="text" class="input_text" name="destination">
+						<span class="glyphicon glyphicon-book"></span>
 						
 					</div>
-					<div class="button_row">
-						<input type="submit" value="Go To Step 2">
+					<div class="option_line">
+						<button type="submit" class="registerbtn">Next step</button>
 					</div>
 					
 				</form>
